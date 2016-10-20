@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Calculator</title>
+		<link rel=stylesheet type=text/css href=./styles/style.css>
+	</head>
+	<body>
+
+		<form name="calculator">
+
+			<input type="text" name="answer" value="">
+			<br>
+
+			<input type="button" value="1" onclick="document.calculator.answer.value+='1'">
+			<input type="button" value="2" onclick="document.calculator.answer.value+='2'">
+			<input type="button" value="3" onclick="document.calculator.answer.value+='3'">
+			<input type="button" value="+" onclick="document.calculator.answer.value+='+'">
+			<br>
+
+			<input type="button" value="4" onclick="document.calculator.answer.value+='4'">
+			<input type="button" value="5" onclick="document.calculator.answer.value+='5'">
+			<input type="button" value="6" onclick="document.calculator.answer.value+='6'">
+			<input type="button" value="-" onclick="document.calculator.answer.value+='-'">
+			<br>
+
+			<input type="button" value="7" onclick="document.calculator.answer.value+='7'">
+			<input type="button" value="8" onclick="document.calculator.answer.value+='8'">
+			<input type="button" value="9" onclick="document.calculator.answer.value+='9'">
+			<input type="button" value="*" onclick="document.calculator.answer.value+='*'">
+			<br>
+
+			<input type="button" value="0" onclick="document.calculator.answer.value+='0'">
+			<input type="button" value="clear">
+			<input type="button" value="=" onclick="document.calculator.answer.value=eval(document.calculator.answer.value)">
+			
+		</form>
+
+		<script type=text/javascript src=./js/script.js></script>
+	</body>
+	</html>
